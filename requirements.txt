@@ -1,0 +1,6 @@
+miyadaiku>=1.12.dev5
+requests
+bs4
+python-dateutil
+miyadaiku_theme_bootstrap4
+miyadaiku_theme_fontawesome

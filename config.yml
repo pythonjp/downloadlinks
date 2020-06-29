@@ -1,0 +1,23 @@
+# Miyadaiku config file
+
+# Base URL of the site
+site_url: http://localhost:8888/
+
+# Title of the site
+site_title: Python downloads
+
+# Default language code
+lang: en-US
+
+# Default charset
+charset: utf-8
+
+# Default timezone
+timezone: UTC
+
+# List of site theme
+themes:
+  - miyadaiku.themes.pygments
+  - miyadaiku_theme_bootstrap4
+  - miyadaiku_theme_fontawesome
+

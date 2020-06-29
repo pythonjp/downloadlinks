@@ -1,0 +1,52 @@
+{% extends 'miyadaiku.themes.base!base.html' %} 
+
+{% block head %} 
+  {{ super() }}
+
+
+<!-- include pygments css -->
+{{ pygments.load_css(page) }}
+
+<!-- include boolstrap4 -->
+{{ bootstrap4.load_css(page) }}
+
+<!-- include jquery.js -->
+{{ jquery.load_js(page) }}
+
+<!-- include popper.js -->
+{{ popper_js.load_js(page) }}
+
+<!-- include boolstrap4 js -->
+{{ bootstrap4.load_js(page) }}
+
+
+{% endblock head %} 
+
+{% block body %} 
+
+<div>
+
+{% block content %} 
+
+  {{ page.html }}
+
+{% endblock content %}
+
+
+{% block footer_copyright %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-9"></div>
+    <div class="col-md-3 copyright">
+      <p class="copyright-text">Copyright © 2020 Python.jp</p>
+      <p class="copyright-text">Powered by <a href="https://github.com/miyadaiku/miyadaiku">miyadaiku</a></p>
+    </div>
+  </div>
+</div>
+{% endblock footer_copyright %}
+
+
+</div>
+
+{% endblock body %}
+

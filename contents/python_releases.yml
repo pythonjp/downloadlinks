@@ -1,0 +1,23 @@
+python_versions:
+  - majorversion: '3.8'
+    releases:
+      - version: 3.8.2
+        date: 2020/1/1
+
+      - version: 3.8.1
+        date: 2020/1/1
+
+      - version: 3.8.0
+        date: 2020/1/1
+
+  - majorversion: '3.7'
+    releases:
+      - version: 3.8.2
+        date: 2020/1/1
+
+      - version: 3.8.1
+        date: 2020/1/1
+
+      - version: 3.8.0
+        date: 2020/1/1
+

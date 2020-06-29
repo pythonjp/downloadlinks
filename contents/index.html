@@ -1,0 +1,80 @@
+---
+title: Unofficial Python Download Links
+---
+
+
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <h1> Unofficial Python Download Links </h1>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div
+        class="nav flex-column nav-pills"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+  
+        {% for version in page.python_versions %}
+          <a
+            class="nav-link {{ 'active' if loop.index == 1}}"
+            data-toggle="pill"
+            href="#page-{{ ''.join(version['majorversion'].split('.')) }}"
+            role="tab"
+            aria-selected="true"
+            >Python {{ version['majorversion'] }}</a
+          >
+        {% endfor %}
+
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content">
+        {% for version in page.python_versions %}
+        <div class="tab-pane {{ 'active' if loop.index == 1}}"
+             id="page-{{ ''.join(version['majorversion'].split('.')) }}"
+             role="tabpanel">
+
+          <div
+            class="tab-pane fade show active"
+            role="tabpanel"
+          >
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                {% for plat in ["Windows", "macOS", "Source"] %}
+                <a
+                  class="nav-item nav-link {{ 'active' if loop.index == 1}}"
+                  id="nav-home-tab"
+                  data-toggle="tab"
+                  href="#files-{{ ''.join(version['majorversion'].split('.')) }}-{{plat}}"
+                  role="tab"
+                  >{{ plat + version['majorversion'] }}</a
+                >
+                {% endfor %}
+              </div>
+            </nav>
+
+            <div class="tab-content">
+              {% for plat in ["Windows", "macOS", "Source"] %}
+                <div class="tab-pane {{ 'active' if loop.index == 1}}"
+                     id="files-{{ ''.join(version['majorversion'].split('.')) }}-{{plat}}"
+                  role="tabpanel">
+
+{{setattr(page, 'abc', 100) }}
+{{ ''.join(version['majorversion'].split('.')) }}-{{plat}}-{{page.context}}
+
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
