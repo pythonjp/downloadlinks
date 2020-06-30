@@ -1,0 +1,170 @@
+---
+title: Unofficial Python Download Links
+---
+
+{% macro tagcontent_id(version, code) -%}
+  {%- set majorversion = version['majorversion'].translate(str.maketrans("", "", ".()")) -%}
+  {{majorversion}}-{{code}}
+{%- endmacro %}
+
+
+{% macro filetable(releases, name) %}
+
+  <table>
+    <thead><th>Version</th><th>date</th><th>filename</th></thead>
+    <tbody>
+    {% for release in releases %}
+      {% if name in release %}
+        <tr>
+          <td>{{release['version']}}</td>
+          <td>{{ release['date'] }}</td>
+          <td><a href="{{release[name]}}">{{release[name].rsplit("/", 1)[-1]}}</td>
+          <td><a href="{{release[name]}}">
+          <i class="fas fa-download"></i></a></td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endmacro %}
+
+
+{% macro windows64(version) %}
+
+  {% set rels = version['releases'] %}
+ 
+  <div>For 64bit versions of Windows</div>
+  {{ filetable(rels, 'windows64') }}
+
+{% endmacro %}
+
+
+{% macro windows32(version) %}
+
+  {% set rels = version['releases'] %}
+  
+  <div>For 32bit versions of Windows</div>
+  {{ filetable(rels, 'windows32') }}
+
+{% endmacro %}
+
+
+{% macro macos(version) %}
+
+  {% set rels = version['releases'] %}
+  
+  <div>For macOS</div>
+  {{ filetable(rels, 'macos') }}
+
+{% endmacro %}
+
+
+{% macro source(version) %}
+
+  {% set rels = version['releases'] %}
+  
+  <div>Source files</div>
+  {{ filetable(rels, 'source') }}
+
+{% endmacro %}
+
+
+
+
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<div class="container">
+  <div class="row">
+    <h1> Unofficial Python Download Links </h1>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div
+        class="nav flex-column nav-pills"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+  
+        {% for version in page.python_versions %}
+          <a
+            class="nav-link {{ 'active' if loop.index == 1}} version_button"
+            data-toggle="pill"
+            href="#page-{{ ''.join(version['majorversion'].split('.')) }}"
+            role="tab"
+            >Python {{ version['majorversion'] }}</a
+          >
+        {% endfor %}
+
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content">
+        {% for version in page.python_versions %}
+        <div class="tab-pane {{ 'active' if loop.index == 1}}"
+             id="page-{{ ''.join(version['majorversion'].split('.')) }}"
+             role="tabpanel">
+
+          <div
+            class="tab-pane fade show active"
+            role="tabpanel"
+          >
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                {% for plat, code in [("Windows(64bit)", "win64"), ("Windows(32bit)", "win32"), ("macOS", "macos"), ("Source", "source")] %}
+                <a
+                  class="nav-item nav-link plat_{{code}}"
+                  id="tab-{{ tagcontent_id(version, code) }}"
+                  data-toggle="tab"
+                  href="#file-{{ tagcontent_id(version, code) }}"
+                  role="tab"
+                  >{{ plat }}</a>
+                {% endfor %}
+              </div>
+            </nav>
+
+            <div class="tab-content">
+              {% for plat, code, func in [("Windows(64bit)", "win64", windows64), ("Windows(32bit)", "win32", windows32), ("macOS", "macos", macos), ("Source", "source", source)] %}
+                <div class="tab-pane plat_{{code}}"
+                     id="file-{{ tagcontent_id(version, code) }}"
+                     role="tabpanel">
+                    {{ func(version) }}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+$( document ).ready(function() {
+  platform = "plat_source"
+  if (navigator.platform.indexOf("Win")!=-1) {
+    // https://stackoverflow.com/questions/1741933/
+    if (navigator.userAgent.indexOf("WOW64") != -1 || 
+        navigator.userAgent.indexOf("Win64") != -1 ){
+       platform ="win64"
+    } else {
+       platform ="win32"
+    }
+  }
+  if (navigator.platform.indexOf("Mac")!=-1) {
+    platform = "macos";
+  }
+
+  $(".plat_macos").addClass("active")
+});
+
+
+</script>
+
+{% endblock body %}

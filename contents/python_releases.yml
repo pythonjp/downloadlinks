@@ -1,23 +1,763 @@
 python_versions:
-  - majorversion: '3.8'
-    releases:
-      - version: 3.8.2
-        date: 2020/1/1
-
-      - version: 3.8.1
-        date: 2020/1/1
-
-      - version: 3.8.0
-        date: 2020/1/1
-
-  - majorversion: '3.7'
-    releases:
-      - version: 3.8.2
-        date: 2020/1/1
-
-      - version: 3.8.1
-        date: 2020/1/1
-
-      - version: 3.8.0
-        date: 2020/1/1
+- majorversion: '3.8'
+  releases:
+  - date: '2020-05-13'
+    info: https://www.python.org/downloads/release/python-383/
+    macos: https://www.python.org/ftp/python/3.8.3/python-3.8.3-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tar.xz
+    version: 3.8.3
+    windows32: https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe
+    windows64: https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe
+  - date: '2020-02-24'
+    info: https://www.python.org/downloads/release/python-382/
+    macos: https://www.python.org/ftp/python/3.8.2/python-3.8.2-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz
+    version: 3.8.2
+    windows32: https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe
+    windows64: https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe
+  - date: '2019-12-18'
+    info: https://www.python.org/downloads/release/python-381/
+    macos: https://www.python.org/ftp/python/3.8.1/python-3.8.1-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz
+    version: 3.8.1
+    windows32: https://www.python.org/ftp/python/3.8.1/python-3.8.1.exe
+    windows64: https://www.python.org/ftp/python/3.8.1/python-3.8.1-amd64.exe
+  - date: '2019-10-14'
+    info: https://www.python.org/downloads/release/python-380/
+    macos: https://www.python.org/ftp/python/3.8.0/python-3.8.0-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+    version: 3.8.0
+    windows32: https://www.python.org/ftp/python/3.8.0/python-3.8.0.exe
+    windows64: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
+- majorversion: '3.7'
+  releases:
+  - date: '2020-06-27'
+    info: https://www.python.org/downloads/release/python-378/
+    macos: https://www.python.org/ftp/python/3.7.8/python-3.7.8-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.8/Python-3.7.8.tar.xz
+    version: 3.7.8
+    windows32: https://www.python.org/ftp/python/3.7.8/python-3.7.8.exe
+    windows64: https://www.python.org/ftp/python/3.7.8/python-3.7.8-amd64.exe
+  - date: '2020-03-10'
+    info: https://www.python.org/downloads/release/python-377/
+    macos: https://www.python.org/ftp/python/3.7.7/python-3.7.7-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.7/Python-3.7.7.tar.xz
+    version: 3.7.7
+    windows32: https://www.python.org/ftp/python/3.7.7/python-3.7.7.exe
+    windows64: https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe
+  - date: '2019-12-18'
+    info: https://www.python.org/downloads/release/python-376/
+    macos: https://www.python.org/ftp/python/3.7.6/python-3.7.6-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tar.xz
+    version: 3.7.6
+    windows32: https://www.python.org/ftp/python/3.7.6/python-3.7.6.exe
+    windows64: https://www.python.org/ftp/python/3.7.6/python-3.7.6-amd64.exe
+  - date: '2019-10-15'
+    info: https://www.python.org/downloads/release/python-375/
+    macos: https://www.python.org/ftp/python/3.7.5/python-3.7.5-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tar.xz
+    version: 3.7.5
+    windows32: https://www.python.org/ftp/python/3.7.5/python-3.7.5.exe
+    windows64: https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe
+  - date: '2019-07-08'
+    info: https://www.python.org/downloads/release/python-374/
+    macos: https://www.python.org/ftp/python/3.7.4/python-3.7.4-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz
+    version: 3.7.4
+    windows32: https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe
+    windows64: https://www.python.org/ftp/python/3.7.4/python-3.7.4-amd64.exe
+  - date: '2019-03-25'
+    info: https://www.python.org/downloads/release/python-373/
+    macos: https://www.python.org/ftp/python/3.7.3/python-3.7.3-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+    version: 3.7.3
+    windows32: https://www.python.org/ftp/python/3.7.3/python-3.7.3.exe
+    windows64: https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe
+  - date: '2018-12-24'
+    info: https://www.python.org/downloads/release/python-372/
+    macos: https://www.python.org/ftp/python/3.7.2/python-3.7.2-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
+    version: 3.7.2
+    windows32: https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe
+    windows64: https://www.python.org/ftp/python/3.7.2/python-3.7.2-amd64.exe
+  - date: '2018-10-20'
+    info: https://www.python.org/downloads/release/python-371/
+    macos: https://www.python.org/ftp/python/3.7.1/python-3.7.1-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
+    version: 3.7.1
+    windows32: https://www.python.org/ftp/python/3.7.1/python-3.7.1.exe
+    windows64: https://www.python.org/ftp/python/3.7.1/python-3.7.1-amd64.exe
+  - date: '2018-06-27'
+    info: https://www.python.org/downloads/release/python-370/
+    macos: https://www.python.org/ftp/python/3.7.0/python-3.7.0-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
+    version: 3.7.0
+    windows32: https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe
+    windows64: https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
+- majorversion: '3.6'
+  releases:
+  - date: '2020-06-27'
+    info: https://www.python.org/downloads/release/python-3611/
+    source: https://www.python.org/ftp/python/3.6.11/Python-3.6.11.tar.xz
+    version: 3.6.11
+  - date: '2019-12-18'
+    info: https://www.python.org/downloads/release/python-3610/
+    source: https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz
+    version: 3.6.10
+  - date: '2019-07-02'
+    info: https://www.python.org/downloads/release/python-369/
+    source: https://www.python.org/ftp/python/3.6.9/Python-3.6.9.tar.xz
+    version: 3.6.9
+  - date: '2018-12-24'
+    info: https://www.python.org/downloads/release/python-368/
+    macos: https://www.python.org/ftp/python/3.6.8/python-3.6.8-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tar.xz
+    version: 3.6.8
+    windows32: https://www.python.org/ftp/python/3.6.8/python-3.6.8.exe
+    windows64: https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe
+  - date: '2018-10-20'
+    info: https://www.python.org/downloads/release/python-367/
+    macos: https://www.python.org/ftp/python/3.6.7/python-3.6.7-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tar.xz
+    version: 3.6.7
+    windows32: https://www.python.org/ftp/python/3.6.7/python-3.6.7.exe
+    windows64: https://www.python.org/ftp/python/3.6.7/python-3.6.7-amd64.exe
+  - date: '2018-06-27'
+    info: https://www.python.org/downloads/release/python-366/
+    macos: https://www.python.org/ftp/python/3.6.6/python-3.6.6-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tar.xz
+    version: 3.6.6
+    windows32: https://www.python.org/ftp/python/3.6.6/python-3.6.6.exe
+    windows64: https://www.python.org/ftp/python/3.6.6/python-3.6.6-amd64.exe
+  - date: '2018-03-28'
+    info: https://www.python.org/downloads/release/python-365/
+    macos: https://www.python.org/ftp/python/3.6.5/python-3.6.5-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz
+    version: 3.6.5
+    windows32: https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe
+    windows64: https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe
+  - date: '2017-12-19'
+    info: https://www.python.org/downloads/release/python-364/
+    macos: https://www.python.org/ftp/python/3.6.4/python-3.6.4-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+    version: 3.6.4
+    windows32: https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe
+    windows64: https://www.python.org/ftp/python/3.6.4/python-3.6.4-amd64.exe
+  - date: '2017-10-03'
+    info: https://www.python.org/downloads/release/python-363/
+    macos: https://www.python.org/ftp/python/3.6.3/python-3.6.3-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz
+    version: 3.6.3
+    windows32: https://www.python.org/ftp/python/3.6.3/python-3.6.3.exe
+    windows64: https://www.python.org/ftp/python/3.6.3/python-3.6.3-amd64.exe
+  - date: '2017-07-17'
+    info: https://www.python.org/downloads/release/python-362/
+    macos: https://www.python.org/ftp/python/3.6.2/python-3.6.2-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz
+    version: 3.6.2
+    windows32: https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe
+    windows64: https://www.python.org/ftp/python/3.6.2/python-3.6.2-amd64.exe
+  - date: '2017-03-21'
+    info: https://www.python.org/downloads/release/python-361/
+    macos: https://www.python.org/ftp/python/3.6.1/python-3.6.1-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
+    version: 3.6.1
+    windows32: https://www.python.org/ftp/python/3.6.1/python-3.6.1.exe
+    windows64: https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe
+  - date: '2016-12-23'
+    info: https://www.python.org/downloads/release/python-360/
+    macos: https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tar.xz
+    version: 3.6.0
+    windows32: https://www.python.org/ftp/python/3.6.0/python-3.6.0.exe
+    windows64: https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe
+- majorversion: '3.5'
+  releases:
+  - date: '2019-11-02'
+    info: https://www.python.org/downloads/release/python-359/
+    source: https://www.python.org/ftp/python/3.5.9/Python-3.5.9.tar.xz
+    version: 3.5.9
+  - date: '2019-10-29'
+    info: https://www.python.org/downloads/release/python-358/
+    source: https://www.python.org/ftp/python/3.5.8/Python-3.5.8.tar.xz
+    version: 3.5.8
+  - date: '2019-03-18'
+    info: https://www.python.org/downloads/release/python-357/
+    source: https://www.python.org/ftp/python/3.5.7/Python-3.5.7.tar.xz
+    version: 3.5.7
+  - date: '2018-08-02'
+    info: https://www.python.org/downloads/release/python-356/
+    source: https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tar.xz
+    version: 3.5.6
+  - date: '2018-02-05'
+    info: https://www.python.org/downloads/release/python-355/
+    source: https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tar.xz
+    version: 3.5.5
+  - date: '2017-08-08'
+    info: https://www.python.org/downloads/release/python-354/
+    macos: https://www.python.org/ftp/python/3.5.4/python-3.5.4-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.5.4/Python-3.5.4.tar.xz
+    version: 3.5.4
+    windows32: https://www.python.org/ftp/python/3.5.4/python-3.5.4.exe
+    windows64: https://www.python.org/ftp/python/3.5.4/python-3.5.4-amd64.exe
+  - date: '2017-01-17'
+    info: https://www.python.org/downloads/release/python-353/
+    macos: https://www.python.org/ftp/python/3.5.3/python-3.5.3-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.5.3/Python-3.5.3.tar.xz
+    version: 3.5.3
+    windows32: https://www.python.org/ftp/python/3.5.3/python-3.5.3.exe
+    windows64: https://www.python.org/ftp/python/3.5.3/python-3.5.3-amd64.exe
+  - date: '2016-06-27'
+    info: https://www.python.org/downloads/release/python-352/
+    macos: https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tar.xz
+    version: 3.5.2
+    windows32: https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+    windows64: https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64.exe
+  - date: '2015-12-07'
+    info: https://www.python.org/downloads/release/python-351/
+    macos: https://www.python.org/ftp/python/3.5.1/python-3.5.1-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz
+    version: 3.5.1
+    windows32: https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe
+    windows64: https://www.python.org/ftp/python/3.5.1/python-3.5.1-amd64.exe
+  - date: '2015-09-13'
+    info: https://www.python.org/downloads/release/python-350/
+    macos: https://www.python.org/ftp/python/3.5.0/python-3.5.0-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tar.xz
+    version: 3.5.0
+    windows32: https://www.python.org/ftp/python/3.5.0/python-3.5.0.exe
+    windows64: https://www.python.org/ftp/python/3.5.0/python-3.5.0-amd64.exe
+- majorversion: '3.4'
+  releases:
+  - date: '2019-03-18'
+    info: https://www.python.org/downloads/release/python-3410/
+    source: https://www.python.org/ftp/python/3.4.10/Python-3.4.10.tar.xz
+    version: 3.4.10
+  - date: '2018-08-02'
+    info: https://www.python.org/downloads/release/python-349/
+    source: https://www.python.org/ftp/python/3.4.9/Python-3.4.9.tar.xz
+    version: 3.4.9
+  - date: '2018-02-05'
+    info: https://www.python.org/downloads/release/python-348/
+    source: https://www.python.org/ftp/python/3.4.8/Python-3.4.8.tar.xz
+    version: 3.4.8
+  - date: '2017-08-09'
+    info: https://www.python.org/downloads/release/python-347/
+    source: https://www.python.org/ftp/python/3.4.7/Python-3.4.7.tar.xz
+    version: 3.4.7
+  - date: '2017-01-17'
+    info: https://www.python.org/downloads/release/python-346/
+    source: https://www.python.org/ftp/python/3.4.6/Python-3.4.6.tar.xz
+    version: 3.4.6
+  - date: '2016-06-27'
+    info: https://www.python.org/downloads/release/python-345/
+    source: https://www.python.org/ftp/python/3.4.5/Python-3.4.5.tar.xz
+    version: 3.4.5
+  - date: '2015-12-21'
+    info: https://www.python.org/downloads/release/python-344/
+    macos: https://www.python.org/ftp/python/3.4.4/python-3.4.4-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.4.4/Python-3.4.4.tar.xz
+    version: 3.4.4
+    windows32: https://www.python.org/ftp/python/3.4.4/python-3.4.4.msi
+    windows64: https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64.msi
+  - date: '2015-02-25'
+    info: https://www.python.org/downloads/release/python-343/
+    macos: https://www.python.org/ftp/python/3.4.3/python-3.4.3-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz
+    version: 3.4.3
+    windows32: https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi
+    windows64: https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64.msi
+  - date: '2014-10-13'
+    info: https://www.python.org/downloads/release/python-342/
+    macos: https://www.python.org/ftp/python/3.4.2/python-3.4.2-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/3.4.2/Python-3.4.2.tar.xz
+    version: 3.4.2
+    windows32: https://www.python.org/ftp/python/3.4.2/python-3.4.2.msi
+    windows64: https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64.msi
+  - date: '2014-05-19'
+    info: https://www.python.org/downloads/release/python-341/
+    macos: https://www.python.org/ftp/python/3.4.1/python-3.4.1-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.4.1/Python-3.4.1.tar.xz
+    version: 3.4.1
+    windows32: https://www.python.org/ftp/python/3.4.1/python-3.4.1.msi
+    windows64: https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64.msi
+  - date: '2014-03-17'
+    info: https://www.python.org/downloads/release/python-340/
+    macos: https://www.python.org/ftp/python/3.4.0/python-3.4.0-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.4.0/Python-3.4.0.tar.xz
+    version: 3.4.0
+    windows32: https://www.python.org/ftp/python/3.4.0/python-3.4.0.msi
+    windows64: https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64.msi
+- majorversion: '3.3'
+  releases:
+  - date: '2017-09-19'
+    info: https://www.python.org/downloads/release/python-337/
+    source: https://www.python.org/ftp/python/3.3.7/Python-3.3.7.tar.xz
+    version: 3.3.7
+  - date: '2014-10-12'
+    info: https://www.python.org/downloads/release/python-336/
+    source: https://www.python.org/ftp/python/3.3.6/Python-3.3.6.tar.xz
+    version: 3.3.6
+  - date: '2014-03-09'
+    info: https://www.python.org/downloads/release/python-335/
+    macos: http://www.python.org/ftp/python/3.3.5/python-3.3.5-macosx10.6.dmg
+    source: http://www.python.org/ftp/python/3.3.5/Python-3.3.5.tar.xz
+    version: 3.3.5
+    windows32: http://www.python.org/ftp/python/3.3.5/python-3.3.5.msi
+    windows64: http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64.msi
+  - date: '2014-02-09'
+    info: https://www.python.org/downloads/release/python-334/
+    version: 3.3.4
+  - date: '2013-11-17'
+    info: https://www.python.org/downloads/release/python-333/
+    macos: https://www.python.org/ftp/python/3.3.3/python-3.3.3-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.3.3/Python-3.3.3.tar.xz
+    version: 3.3.3
+    windows32: https://www.python.org/ftp/python/3.3.3/python-3.3.3.msi
+    windows64: https://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64.msi
+  - date: '2013-05-15'
+    info: https://www.python.org/downloads/release/python-332/
+    macos: https://www.python.org/ftp/python/3.3.2/python-3.3.2-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.3.2/Python-3.3.2.tar.xz
+    version: 3.3.2
+    windows32: https://www.python.org/ftp/python/3.3.2/python-3.3.2.msi
+    windows64: https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64.msi
+  - date: '2013-04-06'
+    info: https://www.python.org/downloads/release/python-331/
+    macos: https://www.python.org/ftp/python/3.3.1/python-3.3.1-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.3.1/Python-3.3.1.tar.xz
+    version: 3.3.1
+    windows32: https://www.python.org/ftp/python/3.3.1/python-3.3.1.msi
+    windows64: https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64.msi
+  - date: '2012-09-29'
+    info: https://www.python.org/downloads/release/python-330/
+    macos: https://www.python.org/ftp/python/3.3.0/python-3.3.0-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.3.0/Python-3.3.0.tar.xz
+    version: 3.3.0
+    windows32: https://www.python.org/ftp/python/3.3.0/python-3.3.0.msi
+    windows64: https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64.msi
+- majorversion: '3.2'
+  releases:
+  - date: '2014-10-12'
+    info: https://www.python.org/downloads/release/python-326/
+    source: https://www.python.org/ftp/python/3.2.6/Python-3.2.6.tar.xz
+    version: 3.2.6
+  - date: '2013-05-15'
+    info: https://www.python.org/downloads/release/python-325/
+    macos: https://www.python.org/ftp/python/3.2.5/python-3.2.5-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2.5/Python-3.2.5.tar.xz
+    version: 3.2.5
+    windows32: https://www.python.org/ftp/python/3.2.5/python-3.2.5.msi
+    windows64: https://www.python.org/ftp/python/3.2.5/python-3.2.5.amd64.msi
+  - date: '2013-04-06'
+    info: https://www.python.org/downloads/release/python-324/
+    macos: https://www.python.org/ftp/python/3.2.4/python-3.2.4-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2.4/Python-3.2.4.tar.xz
+    version: 3.2.4
+    windows32: https://www.python.org/ftp/python/3.2.4/python-3.2.4.msi
+    windows64: https://www.python.org/ftp/python/3.2.4/python-3.2.4.amd64.msi
+  - date: '2012-04-10'
+    info: https://www.python.org/downloads/release/python-323/
+    macos: https://www.python.org/ftp/python/3.2.3/python-3.2.3-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2.3/Python-3.2.3.tar.xz
+    version: 3.2.3
+    windows32: https://www.python.org/ftp/python/3.2.3/python-3.2.3.msi
+    windows64: https://www.python.org/ftp/python/3.2.3/python-3.2.3.amd64.msi
+  - date: '2011-09-03'
+    info: https://www.python.org/downloads/release/python-322/
+    macos: https://www.python.org/ftp/python/3.2.2/python-3.2.2-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2.2/Python-3.2.2.tar.xz
+    version: 3.2.2
+    windows32: https://www.python.org/ftp/python/3.2.2/python-3.2.2.msi
+    windows64: https://www.python.org/ftp/python/3.2.2/python-3.2.2.amd64.msi
+  - date: '2011-07-09'
+    info: https://www.python.org/downloads/release/python-321/
+    macos: https://www.python.org/ftp/python/3.2.1/python-3.2.1-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2.1/Python-3.2.1.tar.xz
+    version: 3.2.1
+    windows32: https://www.python.org/ftp/python/3.2.1/python-3.2.1.msi
+    windows64: https://www.python.org/ftp/python/3.2.1/python-3.2.1.amd64.msi
+  - date: '2011-02-20'
+    info: https://www.python.org/downloads/release/python-320/
+    macos: https://www.python.org/ftp/python/3.2/python-3.2-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/3.2/Python-3.2.tar.xz
+    version: 3.2.0
+    windows32: https://www.python.org/ftp/python/3.2/python-3.2.msi
+    windows64: https://www.python.org/ftp/python/3.2/python-3.2.amd64.msi
+- majorversion: '3.1'
+  releases:
+  - date: '2012-04-09'
+    info: https://www.python.org/downloads/release/python-315/
+    source: https://www.python.org/ftp/python/3.1.5/Python-3.1.5.tar.xz
+    version: 3.1.5
+  - date: '2011-06-11'
+    info: https://www.python.org/downloads/release/python-314/
+    source: https://www.python.org/ftp/python/3.1.4/Python-3.1.4.tar.xz
+    version: 3.1.4
+    windows32: https://www.python.org/ftp/python/3.1.4/python-3.1.4.msi
+    windows64: https://www.python.org/ftp/python/3.1.4/python-3.1.4.amd64.msi
+  - date: '2010-11-27'
+    info: https://www.python.org/downloads/release/python-313/
+    source: https://www.python.org/ftp/python/3.1.3/Python-3.1.3.tgz
+    version: 3.1.3
+    windows32: https://www.python.org/ftp/python/3.1.3/python-3.1.3.msi
+    windows64: https://www.python.org/ftp/python/3.1.3/python-3.1.3.amd64.msi
+  - date: '2010-03-20'
+    info: https://www.python.org/downloads/release/python-312/
+    source: https://www.python.org/ftp/python/3.1.2/Python-3.1.2.tgz
+    version: 3.1.2
+    windows32: https://www.python.org/ftp/python/3.1.2/python-3.1.2.msi
+    windows64: https://www.python.org/ftp/python/3.1.2/python-3.1.2.amd64.msi
+  - date: '2009-08-17'
+    info: https://www.python.org/downloads/release/python-311/
+    source: https://www.python.org/ftp/python/3.1.1/Python-3.1.1.tgz
+    version: 3.1.1
+    windows32: https://www.python.org/ftp/python/3.1.1/python-3.1.1.msi
+    windows64: https://www.python.org/ftp/python/3.1.1/python-3.1.1.amd64.msi
+  - date: '2009-06-26'
+    info: https://www.python.org/downloads/release/python-310/
+    source: https://www.python.org/ftp/python/3.1/Python-3.1.tgz
+    version: 3.1.0
+    windows32: https://www.python.org/ftp/python/3.1/python-3.1.msi
+    windows64: https://www.python.org/ftp/python/3.1/python-3.1.amd64.msi
+- majorversion: '3.0'
+  releases:
+  - date: '2009-02-13'
+    info: https://www.python.org/downloads/release/python-301/
+    source: https://www.python.org/ftp/python/3.0.1/Python-3.0.1.tgz
+    version: 3.0.1
+    windows32: https://www.python.org/ftp/python/3.0.1/python-3.0.1.msi
+    windows64: https://www.python.org/ftp/python/3.0.1/python-3.0.1.amd64.msi
+  - date: '2008-12-03'
+    info: https://www.python.org/downloads/release/python-300/
+    source: https://www.python.org/ftp/python/3.0/Python-3.0.tgz
+    version: 3.0.0
+    windows32: https://www.python.org/ftp/python/3.0/python-3.0.msi
+    windows64: https://www.python.org/ftp/python/3.0/python-3.0.amd64.msi
+- majorversion: '2.7'
+  releases:
+  - date: '2020-04-20'
+    info: https://www.python.org/downloads/release/python-2718/
+    macos: https://www.python.org/ftp/python/2.7.18/python-2.7.18-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+    version: 2.7.18
+    windows32: https://www.python.org/ftp/python/2.7.18/python-2.7.18.msi
+    windows64: https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi
+  - date: '2019-10-19'
+    info: https://www.python.org/downloads/release/python-2717/
+    macos: https://www.python.org/ftp/python/2.7.17/python-2.7.17-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/2.7.17/Python-2.7.17.tar.xz
+    version: 2.7.17
+    windows32: https://www.python.org/ftp/python/2.7.17/python-2.7.17.msi
+    windows64: https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64.msi
+  - date: '2019-03-04'
+    info: https://www.python.org/downloads/release/python-2716/
+    macos: https://www.python.org/ftp/python/2.7.16/python-2.7.16-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tar.xz
+    version: 2.7.16
+    windows32: https://www.python.org/ftp/python/2.7.16/python-2.7.16.msi
+    windows64: https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi
+  - date: '2018-05-01'
+    info: https://www.python.org/downloads/release/python-2715/
+    macos: https://www.python.org/ftp/python/2.7.15/python-2.7.15-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tar.xz
+    version: 2.7.15
+    windows32: https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi
+    windows64: https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi
+  - date: '2017-09-16'
+    info: https://www.python.org/downloads/release/python-2714/
+    macos: https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
+    version: 2.7.14
+    windows32: https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi
+    windows64: https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64.msi
+  - date: '2016-12-17'
+    info: https://www.python.org/downloads/release/python-2713/
+    macos: https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
+    version: 2.7.13
+    windows32: https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi
+    windows64: https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64.msi
+  - date: '2016-06-25'
+    info: https://www.python.org/downloads/release/python-2712/
+    macos: https://www.python.org/ftp/python/2.7.12/python-2.7.12-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz
+    version: 2.7.12
+    windows32: https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi
+    windows64: https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64.msi
+  - date: '2015-12-05'
+    info: https://www.python.org/downloads/release/python-2711/
+    macos: https://www.python.org/ftp/python/2.7.11/python-2.7.11-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz
+    version: 2.7.11
+    windows32: https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi
+    windows64: https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64.msi
+  - date: '2015-05-23'
+    info: https://www.python.org/downloads/release/python-2710/
+    macos: https://www.python.org/ftp/python/2.7.10/python-2.7.10-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tar.xz
+    version: 2.7.10
+    windows32: https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
+    windows64: https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64.msi
+  - date: '2014-12-10'
+    info: https://www.python.org/downloads/release/python-279/
+    macos: https://www.python.org/ftp/python/2.7.9/python-2.7.9-macosx10.6.pkg
+    source: https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz
+    version: 2.7.9
+    windows32: https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi
+    windows64: https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi
+  - date: '2014-07-02'
+    info: https://www.python.org/downloads/release/python-278/
+    macos: https://www.python.org/ftp/python/2.7.8/python-2.7.8-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz
+    version: 2.7.8
+    windows32: https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi
+    windows64: https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi
+  - date: '2014-06-01'
+    info: https://www.python.org/downloads/release/python-277/
+    macos: https://www.python.org/ftp/python/2.7.7/python-2.7.7-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.7/Python-2.7.7.tar.xz
+    version: 2.7.7
+    windows32: https://www.python.org/ftp/python/2.7.7/python-2.7.7.msi
+    windows64: https://www.python.org/ftp/python/2.7.7/python-2.7.7.amd64.msi
+  - date: '2013-11-10'
+    info: https://www.python.org/downloads/release/python-276/
+    version: 2.7.6
+  - date: '2013-05-12'
+    info: https://www.python.org/downloads/release/python-275/
+    macos: https://www.python.org/ftp/python/2.7.5/python-2.7.5-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.xz
+    version: 2.7.5
+    windows32: https://www.python.org/ftp/python/2.7.5/python-2.7.5.msi
+    windows64: https://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi
+  - date: '2013-04-06'
+    info: https://www.python.org/downloads/release/python-274/
+    macos: https://www.python.org/ftp/python/2.7.4/python-2.7.4-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.4/Python-2.7.4.tar.xz
+    version: 2.7.4
+    windows32: https://www.python.org/ftp/python/2.7.4/python-2.7.4.msi
+    windows64: https://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64.msi
+  - date: '2012-04-09'
+    info: https://www.python.org/downloads/release/python-273/
+    macos: https://www.python.org/ftp/python/2.7.3/python-2.7.3-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz
+    version: 2.7.3
+    windows32: https://www.python.org/ftp/python/2.7.3/python-2.7.3.msi
+    windows64: https://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64.msi
+  - date: '2011-06-11'
+    info: https://www.python.org/downloads/release/python-272/
+    macos: https://www.python.org/ftp/python/2.7.2/python-2.7.2-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.2/Python-2.7.2.tar.xz
+    version: 2.7.2
+    windows32: https://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
+    windows64: https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi
+  - date: '2010-11-27'
+    info: https://www.python.org/downloads/release/python-271/
+    macos: https://www.python.org/ftp/python/2.7.1/python-2.7.1-macosx10.6.dmg
+    source: https://www.python.org/ftp/python/2.7.1/Python-2.7.1.tgz
+    version: 2.7.1
+    windows32: https://www.python.org/ftp/python/2.7.1/python-2.7.1.msi
+    windows64: https://www.python.org/ftp/python/2.7.1/python-2.7.1.amd64.msi
+  - date: '2010-07-03'
+    info: https://www.python.org/downloads/release/python-270/
+    source: https://www.python.org/ftp/python/2.7/Python-2.7.tgz
+    version: 2.7.0
+    windows32: https://www.python.org/ftp/python/2.7/python-2.7.msi
+    windows64: https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi
+- majorversion: '2.6'
+  releases:
+  - date: '2013-10-29'
+    info: https://www.python.org/downloads/release/python-269/
+    source: https://www.python.org/ftp/python/2.6.9/Python-2.6.9.tar.xz
+    version: 2.6.9
+  - date: '2012-04-10'
+    info: https://www.python.org/downloads/release/python-268/
+    source: https://www.python.org/ftp/python/2.6.8/Python-2.6.8.tgz
+    version: 2.6.8
+  - date: '2011-06-03'
+    info: https://www.python.org/downloads/release/python-267/
+    source: https://www.python.org/ftp/python/2.6.7/Python-2.6.7.tgz
+    version: 2.6.7
+  - date: '2010-08-24'
+    info: https://www.python.org/downloads/release/python-266/
+    source: https://www.python.org/ftp/python/2.6.6/Python-2.6.6.tgz
+    version: 2.6.6
+    windows32: https://www.python.org/ftp/python/2.6.6/python-2.6.6.msi
+    windows64: https://www.python.org/ftp/python/2.6.6/python-2.6.6.amd64.msi
+  - date: '2010-03-18'
+    info: https://www.python.org/downloads/release/python-265/
+    source: https://www.python.org/ftp/python/2.6.5/Python-2.6.5.tgz
+    version: 2.6.5
+    windows32: https://www.python.org/ftp/python/2.6.5/python-2.6.5.msi
+    windows64: https://www.python.org/ftp/python/2.6.5/python-2.6.5.amd64.msi
+  - date: '2009-10-26'
+    info: https://www.python.org/downloads/release/python-264/
+    source: https://www.python.org/ftp/python/2.6.4/Python-2.6.4.tgz
+    version: 2.6.4
+    windows32: https://www.python.org/ftp/python/2.6.4/python-2.6.4.msi
+    windows64: https://www.python.org/ftp/python/2.6.4/python-2.6.4.amd64.msi
+  - date: '2009-10-02'
+    info: https://www.python.org/downloads/release/python-263/
+    source: https://www.python.org/ftp/python/2.6.3/Python-2.6.3.tgz
+    version: 2.6.3
+    windows32: https://www.python.org/ftp/python/2.6.3/python-2.6.3.msi
+    windows64: https://www.python.org/ftp/python/2.6.3/python-2.6.3.amd64.msi
+  - date: '2009-04-14'
+    info: https://www.python.org/downloads/release/python-262/
+    source: https://www.python.org/ftp/python/2.6.2/Python-2.6.2.tgz
+    version: 2.6.2
+    windows32: https://www.python.org/ftp/python/2.6.2/python-2.6.2.msi
+    windows64: https://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi
+  - date: '2008-12-04'
+    info: https://www.python.org/downloads/release/python-261/
+    source: https://www.python.org/ftp/python/2.6.1/Python-2.6.1.tgz
+    version: 2.6.1
+    windows32: https://www.python.org/ftp/python/2.6.1/python-2.6.1.msi
+    windows64: https://www.python.org/ftp/python/2.6.1/python-2.6.1.amd64.msi
+  - date: '2008-10-02'
+    info: https://www.python.org/downloads/release/python-260/
+    source: https://www.python.org/ftp/python/2.6/Python-2.6.tgz
+    version: 2.6.0
+    windows32: https://www.python.org/ftp/python/2.6/python-2.6.msi
+    windows64: https://www.python.org/ftp/python/2.6/python-2.6.amd64.msi
+- majorversion: '2.5'
+  releases:
+  - date: '2011-05-26'
+    info: https://www.python.org/downloads/release/python-256/
+    source: https://www.python.org/ftp/python/2.5.6/Python-2.5.6.tgz
+    version: 2.5.6
+  - date: '2010-01-31'
+    info: https://www.python.org/downloads/release/python-255/
+    source: https://www.python.org/ftp/python/2.5.5/Python-2.5.5.tgz
+    version: 2.5.5
+  - date: '2008-12-23'
+    info: https://www.python.org/downloads/release/python-254/
+    source: https://www.python.org/ftp/python/2.5.4/Python-2.5.4.tgz
+    version: 2.5.4
+    windows32: https://www.python.org/ftp/python/2.5.4/python-2.5.4.msi
+    windows64: https://www.python.org/ftp/python/2.5.4/python-2.5.4.amd64.msi
+  - date: '2008-12-19'
+    info: https://www.python.org/downloads/release/python-253/
+    source: https://www.python.org/ftp/python/2.5.3/Python-2.5.3.tgz
+    version: 2.5.3
+    windows32: https://www.python.org/ftp/python/2.5.3/python-2.5.3.msi
+    windows64: https://www.python.org/ftp/python/2.5.3/python-2.5.3.amd64.msi
+  - date: '2008-02-21'
+    info: https://www.python.org/downloads/release/python-252/
+    source: https://www.python.org/ftp/python/2.5.2/Python-2.5.2.tgz
+    version: 2.5.2
+    windows32: https://www.python.org/ftp/python/2.5.2/python-2.5.2.msi
+    windows64: https://www.python.org/ftp/python/2.5.2/python-2.5.2.amd64.msi
+  - date: '2007-04-19'
+    info: https://www.python.org/downloads/release/python-251/
+    source: https://www.python.org/ftp/python/2.5.1/Python-2.5.1.tgz
+    version: 2.5.1
+    windows32: https://www.python.org/ftp/python/2.5.1/python-2.5.1.msi
+    windows64: https://www.python.org/ftp/python/2.5.1/python-2.5.1.amd64.msi
+  - date: '2006-09-19'
+    info: https://www.python.org/downloads/release/python-250/
+    source: https://www.python.org/ftp/python/2.5/Python-2.5.tgz
+    version: 2.5.0
+    windows32: https://www.python.org/ftp/python/2.5/python-2.5.msi
+    windows64: https://www.python.org/ftp/python/2.5/python-2.5.amd64.msi
+- majorversion: '2.4'
+  releases:
+  - date: '2008-12-19'
+    info: https://www.python.org/downloads/release/python-246/
+    source: https://www.python.org/ftp/python/2.4.6/Python-2.4.6.tgz
+    version: 2.4.6
+  - date: '2008-03-11'
+    info: https://www.python.org/downloads/release/python-245/
+    source: https://www.python.org/ftp/python/2.4.5/Python-2.4.5.tgz
+    version: 2.4.5
+  - date: '2006-10-18'
+    info: https://www.python.org/downloads/release/python-244/
+    source: https://www.python.org/ftp/python/2.4.4/Python-2.4.4.tgz
+    version: 2.4.4
+    windows32: https://www.python.org/ftp/python/2.4.4/python-2.4.4.msi
+  - date: '2006-04-15'
+    info: https://www.python.org/downloads/release/python-243/
+    source: https://www.python.org/ftp/python/2.4.3/Python-2.4.3.tgz
+    version: 2.4.3
+    windows32: https://www.python.org/ftp/python/2.4.3/python-2.4.3.msi
+  - date: '2005-09-27'
+    info: https://www.python.org/downloads/release/python-242/
+    source: https://www.python.org/ftp/python/2.4.2/Python-2.4.2.tgz
+    version: 2.4.2
+    windows32: https://www.python.org/ftp/python/2.4.2/python-2.4.2.msi
+  - date: '2005-03-30'
+    info: https://www.python.org/downloads/release/python-241/
+    source: https://www.python.org/ftp/python/2.4.1/Python-2.4.1.tgz
+    version: 2.4.1
+    windows32: https://www.python.org/ftp/python/2.4.1/python-2.4.1.msi
+  - date: '2004-11-30'
+    info: https://www.python.org/downloads/release/python-240/
+    source: https://www.python.org/ftp/python/2.4/Python-2.4.tgz
+    version: 2.4.0
+    windows32: https://www.python.org/ftp/python/2.4/python-2.4.msi
+- majorversion: '2.3'
+  releases:
+  - date: '2008-03-11'
+    info: https://www.python.org/downloads/release/python-237/
+    source: https://www.python.org/ftp/python/2.3.7/Python-2.3.7.tgz
+    version: 2.3.7
+  - date: '2006-11-01'
+    info: https://www.python.org/downloads/release/python-236/
+    source: https://www.python.org/ftp/python/2.3.6/Python-2.3.6.tgz
+    version: 2.3.6
+  - date: '2005-02-08'
+    info: https://www.python.org/downloads/release/python-235/
+    source: https://www.python.org/ftp/python/2.3.5/Python-2.3.5.tgz
+    version: 2.3.5
+  - date: '2004-05-27'
+    info: https://www.python.org/downloads/release/python-234/
+    source: https://www.python.org/ftp/python/2.3.4/Python-2.3.4.tgz
+    version: 2.3.4
+  - date: '2003-12-19'
+    info: https://www.python.org/downloads/release/python-233/
+    source: https://www.python.org/ftp/python/2.3.3/Python-2.3.3.tgz
+    version: 2.3.3
+  - date: '2003-10-03'
+    info: https://www.python.org/downloads/release/python-232/
+    source: https://www.python.org/ftp/python/2.3.2/Python-2.3.2.tgz
+    version: 2.3.2
+  - date: '2003-09-23'
+    info: https://www.python.org/downloads/release/python-231/
+    source: https://www.python.org/ftp/python/2.3.1/Python-2.3.1.tgz
+    version: 2.3.1
+  - date: '2003-07-29'
+    info: https://www.python.org/downloads/release/python-230/
+    source: https://www.python.org/ftp/python/2.3/Python-2.3.tgz
+    version: 2.3.0
+- majorversion: '2.2'
+  releases:
+  - date: '2003-05-30'
+    info: https://www.python.org/downloads/release/python-223/
+    source: https://www.python.org/ftp/python/2.2.3/Python-2.2.3.tgz
+    version: 2.2.3
+  - date: '2002-10-14'
+    info: https://www.python.org/downloads/release/python-222/
+    source: https://www.python.org/ftp/python/2.2.2/Python-2.2.2.tgz
+    version: 2.2.2
+  - date: '2002-04-10'
+    info: https://www.python.org/downloads/release/python-221/
+    source: https://www.python.org/ftp/python/2.2.1/Python-2.2.1.tgz
+    version: 2.2.1
+  - date: '2001-12-21'
+    info: https://www.python.org/downloads/release/python-220/
+    source: https://www.python.org/ftp/python/2.2/Python-2.2.tgz
+    version: 2.2.0
+- majorversion: '2.1'
+  releases:
+  - date: '2002-04-09'
+    info: https://www.python.org/downloads/release/python-213/
+    source: https://www.python.org/ftp/python/2.1.3/Python-2.1.3.tgz
+    version: 2.1.3
+- majorversion: '2.0'
+  releases:
+  - date: '2001-06-22'
+    info: https://www.python.org/downloads/release/python-201/
+    source: https://www.python.org/ftp/python/2.0.1/Python-2.0.1.tgz
+    version: 2.0.1
 

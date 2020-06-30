@@ -3,6 +3,10 @@ import typing
 from urllib.parse import urljoin
 import datetime
 from dataclasses import dataclass
+from collections import defaultdict
+import re
+
+import yaml
 
 import requests
 from bs4 import BeautifulSoup
@@ -57,6 +61,34 @@ class Release:
     date: datetime.date
     download: str
     relnote: str
+    files: typing.List[typing.Dict[str, str]]
+
+def get_files(url):
+    html = requests.get(url).text
+    links = BeautifulSoup(html, features="html.parser").select("td a")
+
+    ret = []
+    for link in links:
+        text = ""
+        if re.search(r"(Windows x86-64 executable installer)|(Windows x86-64 MSI installer)", link.text):
+            text = "windows64"
+        elif re.search(r"(Windows x86 executable installer)|(Windows x86 MSI installer)", link.text):
+            text = "windows32"
+        elif re.search(r"XZ compressed source tarball", link.text):
+            text = "source"
+        elif re.search(r"Gzipped source tarball", link.text):
+            if not text:
+                text = "source"
+        elif re.search(r"(macOS 64-bit installer)|(Mac OS X 64-bit/32-bit installer)", link.text):
+            text = "macos"
+
+
+
+        if text:
+            ret.append({text: link["href"]})
+
+    return ret
+
 
 def get_releases():
     html = requests.get(DOWNLOADS).text
@@ -76,12 +108,35 @@ def get_releases():
         # get download link
         download = urljoin(PYTHON_HOST, li.find(class_="release-download").a['href'])
 
+        files = get_files(download)
+        
         # get release note
         relnote= urljoin(PYTHON_HOST, li.find(class_="release-enhancements").a['href'])
         
-        rel = Release(release=rel, pre=m['pre'], date=date, download=download, relnote=relnote)
+        rel = Release(release=rel, pre=m['pre'], date=date, download=download, relnote=relnote, files=files)
         rels.append(rel)
 
     return sorted(rels, key=lambda r:(r.release, r.pre, r.date), reverse=True)
 
-print(get_releases())
+def save(rels):
+    all = defaultdict(list)
+    for rel in rels:
+        d = {
+            'version': ".".join(str(r) for r in rel.release),
+            'date': str(rel.date),
+            'info': rel.download,
+        }
+        for file in rel.files:
+            d.update(file)
+
+        all[".".join(str(r) for r in rel.release[:2])].append(d)
+
+
+    rels = [{'majorversion': k, 'releases': v} for k, v in all.items()]
+    return rels
+
+rels = get_releases()
+ret = save(rels)
+
+print(yaml.dump({'python_versions': ret}, Dumper=yaml.Dumper))
+

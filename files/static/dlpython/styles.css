@@ -1,0 +1,61 @@
+ol {
+  margin-bottom: 1rem;
+}
+
+li p, li {
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  margin: 2rem 0rem;
+  text-shadow: 2px 2px 8px #c3bec1;
+}
+
+.file_list_pane {
+  padding:1em;
+}
+
+.table-files {
+  margin: 1em;
+}
+
+.highlight {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+
+.memo {
+  padding:1em;
+}
+
+.memo h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.memo h2 {
+  font-size: 1.2rem;
+  margin: 1.5em 0 1em;
+}
+
+.memo h3 {
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 4em;
+  font-size: 9pt;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+

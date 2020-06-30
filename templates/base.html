@@ -3,6 +3,8 @@
 {% block head %} 
   {{ super() }}
 
+<!-- include font awesome -->
+{{ fontawesome.load_css(page) }}
 
 <!-- include pygments css -->
 {{ pygments.load_css(page) }}
@@ -19,12 +21,12 @@
 <!-- include boolstrap4 js -->
 {{ bootstrap4.load_js(page) }}
 
+<link rel="stylesheet" href="{{page.path_to('/static/dlpython/styles.css')}}">
 
 {% endblock head %} 
 
 {% block body %} 
 
-<div>
 
 {% block content %} 
 
@@ -36,17 +38,15 @@
 {% block footer_copyright %}
 <div class="container">
   <div class="row">
-    <div class="col-md-9"></div>
-    <div class="col-md-3 copyright">
+    <div class="col-md-12 footer">
+      <p>This website uses cookies to improve your experience. By browsing this website, you agree to our use of cookies.</p>
+      <p>Please submit issue <a href="https://github.com/pythonjp/downloadlinks/issues" style="font-weight: bold;">here <i class="fab fa-github"></i></a>.</P>
       <p class="copyright-text">Copyright © 2020 Python.jp</p>
       <p class="copyright-text">Powered by <a href="https://github.com/miyadaiku/miyadaiku">miyadaiku</a></p>
+
     </div>
   </div>
 </div>
 {% endblock footer_copyright %}
 
-
-</div>
-
 {% endblock body %}
-
