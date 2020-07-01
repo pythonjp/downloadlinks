@@ -1,0 +1,72 @@
+name: Build miyadaiku
+
+on: [push]
+
+jobs:
+  build:
+    name: build
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Cache download dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cach
+          key: ${{ runner.os }}-pip2-${{ hashFiles('requirements.txt') }}-${{ hashFiles('freeze.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: where?
+        run: |
+          pwd
+
+      - name: Create venv
+        run: |
+          python3 -m venv .venv
+
+      - name: Cache venv dependencies
+        uses: actions/cache@v1
+        with:
+          path: .venv
+          key: ${{ runner.os }}-venv2-${{ hashFiles('requirements.txt') }}-${{ hashFiles('freeze.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-venv2-
+
+      - name: Install dependencies
+        run: |
+          .venv/bin/python -m pip install --upgrade pip wheel
+          .venv/bin/pip3 install -r requirements.txt
+
+      - name: build miyadaiku(release)
+        if: github.ref == 'refs/heads/release'
+        run: |
+          .venv/bin/miyadaiku-build -d site_url=https://pythonlinks.python.jp/ .
+
+# https://stackoverflow.com/questions/60477061/github-actions-how-to-deploy-to-remote-server-using-ssh
+#      - name: Create SSH key
+#        run: |
+#          mkdir -p ~/.ssh/
+#          echo "$SSH_PRIVATE_KEY" > ../private.key
+#          sudo chmod 600 ../private.key
+#          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+#        shell: bash
+#        env:
+#          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+#          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
+#          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
+
+#      - name: copy files
+#        run: |
+#          cd outputs
+#          tar cjf gen.tjz *
+#          scp -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/home/pythonlinks"
+#          ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /home/pythonlinks; tar xjmf gen.tjz --no-overwrite-dir"
+
+
+
