@@ -17,6 +17,8 @@ timezone: UTC
 
 pygments_style: default
 
+ga_tracking_id: UA-170099630-2
+
 # List of site theme
 themes:
   - miyadaiku.themes.pygments
