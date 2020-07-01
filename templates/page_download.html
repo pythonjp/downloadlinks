@@ -179,21 +179,21 @@
 <script>
 
 $( document ).ready(function() {
-  platform = "plat_source"
+  platform = ".plat_source"
   if (navigator.platform.indexOf("Win")!=-1) {
     // https://stackoverflow.com/questions/1741933/
     if (navigator.userAgent.indexOf("WOW64") != -1 || 
         navigator.userAgent.indexOf("Win64") != -1 ){
-       platform ="win64"
+       platform =".plat_win64"
     } else {
-       platform ="win32"
+       platform =".plat_win32"
     }
   }
   if (navigator.platform.indexOf("Mac")!=-1) {
-    platform = "macos";
+    platform = ".plat_macos";
   }
-
-  $(".plat_macos").addClass("active")
+  console.log(platform)
+  $(platform).addClass("active")
 });
 
 
