@@ -1,6 +1,10 @@
 name: Build miyadaiku
 
-on: [push]
+on: 
+  push:
+  schedule:
+    - cron:  '5 */8 * * *'
+
 
 jobs:
   build:
@@ -17,7 +21,7 @@ jobs:
       - name: Cache download dependencies
         uses: actions/cache@v1
         with:
-          path: ~/.cach
+          path: ~/.cache
           key: ${{ runner.os }}-pip2-${{ hashFiles('requirements.txt') }}-${{ hashFiles('freeze.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
@@ -43,30 +47,34 @@ jobs:
           .venv/bin/python -m pip install --upgrade pip wheel
           .venv/bin/pip3 install -r requirements.txt
 
+      - name: Fetch python.org
+        run: |
+          .venv/bin/python get_releases.py > contents/python_releases.yml
+
       - name: build miyadaiku(release)
-        if: github.ref == 'refs/heads/release'
         run: |
           .venv/bin/miyadaiku-build -d site_url=https://pythonlinks.python.jp/ .
+          sed -i.bak  "s/LAST_UPDATED/$(date)/g" outputs/ja/index.html
+          sed -i.bak  "s/LAST_UPDATED/$(date)/g" outputs/en/index.html
 
-# https://stackoverflow.com/questions/60477061/github-actions-how-to-deploy-to-remote-server-using-ssh
-#      - name: Create SSH key
-#        run: |
-#          mkdir -p ~/.ssh/
-#          echo "$SSH_PRIVATE_KEY" > ../private.key
-#          sudo chmod 600 ../private.key
-#          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-#        shell: bash
-#        env:
-#          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-#          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
-#          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
+      - name: copy files
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_DRAFT_PYTHON_JP}}
+        run: |
+          echo "$SSH_PRIVATE_KEY" > private_key
+          chmod 600 private_key
+          cd outputs
+          tar cjf gen.tjz *
+          scp -i ../private_key -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/home/pythonlinks"
+          ssh -i ../private_key  -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /home/pythonlinks; tar xjmf gen.tjz --no-overwrite-dir"
+          cd ..
+          rm private_key
 
-#      - name: copy files
-#        run: |
-#          cd outputs
-#          tar cjf gen.tjz *
-#          scp -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/home/pythonlinks"
-#          ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /home/pythonlinks; tar xjmf gen.tjz --no-overwrite-dir"
-
-
+      - name: push changes
+        run: |
+          git config --global user.name 'github actions'
+          git config --global user.email 'pythonlinks@users.noreply.github.com'
+          git commit -am "Python releases updated" || true
+          git push || true
+          
 

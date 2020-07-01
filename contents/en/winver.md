@@ -2,7 +2,7 @@
 type: snippet
 ---
 
-There are 64-bit version and 32-bit version of Windows. To determine your CPU type in Windows 8 and Windows 10:
+There are 64-bit version and 32-bit version of Windows. To determine your CPU type:
 
 - **Windows 10 and Windows 8.1**
 
