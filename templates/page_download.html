@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block head %}
+  {{ super() }}
+  {% for lang, pagename in page.lang_pages.items() %}
+    {% if lang !=  page.lang %}
+      <link rel="alternate" hreflang="{{ lang }}" href="{{page.path_to(pagename) }}" />
+    {% endif %}
+  {% endfor %}
+{% endblock head %}
+
 
 {% macro tagcontent_id(version, code) -%}
   {%- set majorversion = version['majorversion'].translate(str.maketrans("", "", ".()")) -%}
