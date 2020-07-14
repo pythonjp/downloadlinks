@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.8'
   releases:
+  - date: '2020-07-13'
+    info: https://www.python.org/downloads/release/python-384/
+    macos: https://www.python.org/ftp/python/3.8.4/python-3.8.4-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz
+    version: 3.8.4
+    windows32: https://www.python.org/ftp/python/3.8.4/python-3.8.4.exe
+    windows64: https://www.python.org/ftp/python/3.8.4/python-3.8.4-amd64.exe
   - date: '2020-05-13'
     info: https://www.python.org/downloads/release/python-383/
     macos: https://www.python.org/ftp/python/3.8.3/python-3.8.3-macosx10.9.pkg
