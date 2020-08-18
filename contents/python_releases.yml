@@ -45,6 +45,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 - majorversion: '3.7'
   releases:
+  - date: '2020-08-17'
+    info: https://www.python.org/downloads/release/python-379/
+    macos: https://www.python.org/ftp/python/3.7.9/python-3.7.9-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.7.9/Python-3.7.9.tar.xz
+    version: 3.7.9
+    windows32: https://www.python.org/ftp/python/3.7.9/python-3.7.9.exe
+    windows64: https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
   - date: '2020-06-27'
     info: https://www.python.org/downloads/release/python-378/
     macos: https://www.python.org/ftp/python/3.7.8/python-3.7.8-macosx10.9.pkg
@@ -110,6 +117,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
 - majorversion: '3.6'
   releases:
+  - date: '2020-08-17'
+    info: https://www.python.org/downloads/release/python-3612/
+    source: https://www.python.org/ftp/python/3.6.12/Python-3.6.12.tar.xz
+    version: 3.6.12
   - date: '2020-06-27'
     info: https://www.python.org/downloads/release/python-3611/
     source: https://www.python.org/ftp/python/3.6.11/Python-3.6.11.tar.xz
