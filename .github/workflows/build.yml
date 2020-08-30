@@ -64,7 +64,6 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
           cd outputs
-          cat ../private_key
           tar cjf gen.tjz *
           scp -i ../private_key -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/home/pythonlinks"
           ssh -i ../private_key  -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /home/pythonlinks; tar xjmf gen.tjz --no-overwrite-dir"
