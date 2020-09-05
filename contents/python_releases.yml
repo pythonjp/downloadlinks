@@ -198,6 +198,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe
 - majorversion: '3.5'
   releases:
+  - date: '2020-09-05'
+    info: https://www.python.org/downloads/release/python-3510/
+    source: https://www.python.org/ftp/python/3.5.10/Python-3.5.10.tar.xz
+    version: 3.5.10
   - date: '2019-11-02'
     info: https://www.python.org/downloads/release/python-359/
     source: https://www.python.org/ftp/python/3.5.9/Python-3.5.9.tar.xz
