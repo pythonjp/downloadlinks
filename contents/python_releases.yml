@@ -1,4 +1,13 @@
 python_versions:
+- majorversion: '3.9'
+  releases:
+  - date: '2020-10-05'
+    info: https://www.python.org/downloads/release/python-390/
+    macos: https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz
+    version: 3.9.0
+    windows32: https://www.python.org/ftp/python/3.9.0/python-3.9.0.exe
+    windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
   - date: '2020-09-24'
