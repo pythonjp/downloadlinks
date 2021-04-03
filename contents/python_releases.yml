@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.9'
   releases:
+  - date: '2021-04-02'
+    info: https://www.python.org/downloads/release/python-393/
+    macos: https://www.python.org/ftp/python/3.9.3/python-3.9.3-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.9.3/Python-3.9.3.tar.xz
+    version: 3.9.3
+    windows32: https://www.python.org/ftp/python/3.9.3/python-3.9.3.exe
+    windows64: https://www.python.org/ftp/python/3.9.3/python-3.9.3-amd64.exe
   - date: '2021-02-19'
     info: https://www.python.org/downloads/release/python-392/
     macos: https://www.python.org/ftp/python/3.9.2/python-3.9.2-macosx10.9.pkg
@@ -24,6 +31,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
+  - date: '2021-04-02'
+    info: https://www.python.org/downloads/release/python-389/
+    macos: https://www.python.org/ftp/python/3.8.9/python-3.8.9-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.9/Python-3.8.9.tar.xz
+    version: 3.8.9
+    windows32: https://www.python.org/ftp/python/3.8.9/python-3.8.9.exe
+    windows64: https://www.python.org/ftp/python/3.8.9/python-3.8.9-amd64.exe
   - date: '2021-02-19'
     info: https://www.python.org/downloads/release/python-388/
     macos: https://www.python.org/ftp/python/3.8.8/python-3.8.8-macosx10.9.pkg
