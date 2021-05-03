@@ -31,6 +31,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
+  - date: '2021-05-03'
+    info: https://www.python.org/downloads/release/python-3810/
+    macos: https://www.python.org/ftp/python/3.8.10/python-3.8.10-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.8.10/Python-3.8.10.tar.xz
+    version: 3.8.10
+    windows32: https://www.python.org/ftp/python/3.8.10/python-3.8.10.exe
+    windows64: https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe
   - date: '2021-04-02'
     info: https://www.python.org/downloads/release/python-389/
     macos: https://www.python.org/ftp/python/3.8.9/python-3.8.9-macosx10.9.pkg
