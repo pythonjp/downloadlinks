@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.9'
   releases:
+  - date: '2021-05-03'
+    info: https://www.python.org/downloads/release/python-395/
+    macos: https://www.python.org/ftp/python/3.9.5/python-3.9.5-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tar.xz
+    version: 3.9.5
+    windows32: https://www.python.org/ftp/python/3.9.5/python-3.9.5.exe
+    windows64: https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe
   - date: '2021-04-04'
     info: https://www.python.org/downloads/release/python-394/
     macos: https://www.python.org/ftp/python/3.9.4/python-3.9.4-macosx10.9.pkg
