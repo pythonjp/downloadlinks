@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.9'
   releases:
+  - date: '2021-08-30'
+    info: https://www.python.org/downloads/release/python-397/
+    macos: https://www.python.org/ftp/python/3.9.7/python-3.9.7-macosx10.9.pkg
+    source: https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
+    version: 3.9.7
+    windows32: https://www.python.org/ftp/python/3.9.7/python-3.9.7.exe
+    windows64: https://www.python.org/ftp/python/3.9.7/python-3.9.7-amd64.exe
   - date: '2021-06-28'
     info: https://www.python.org/downloads/release/python-396/
     macos: https://www.python.org/ftp/python/3.9.6/python-3.9.6-macosx10.9.pkg
@@ -45,6 +52,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
+  - date: '2021-08-30'
+    info: https://www.python.org/downloads/release/python-3812/
+    source: https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tar.xz
+    version: 3.8.12
   - date: '2021-06-28'
     info: https://www.python.org/downloads/release/python-3811/
     source: https://www.python.org/ftp/python/3.8.11/Python-3.8.11.tar.xz
@@ -128,6 +139,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 - majorversion: '3.7'
   releases:
+  - date: '2021-09-04'
+    info: https://www.python.org/downloads/release/python-3712/
+    source: https://www.python.org/ftp/python/3.7.12/Python-3.7.12.tar.xz
+    version: 3.7.12
   - date: '2021-06-28'
     info: https://www.python.org/downloads/release/python-3711/
     source: https://www.python.org/ftp/python/3.7.11/Python-3.7.11.tar.xz
@@ -208,6 +223,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
 - majorversion: '3.6'
   releases:
+  - date: '2021-09-04'
+    info: https://www.python.org/downloads/release/python-3615/
+    source: https://www.python.org/ftp/python/3.6.15/Python-3.6.15.tar.xz
+    version: 3.6.15
   - date: '2021-06-28'
     info: https://www.python.org/downloads/release/python-3614/
     source: https://www.python.org/ftp/python/3.6.14/Python-3.6.14.tar.xz
