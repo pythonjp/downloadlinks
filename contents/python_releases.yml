@@ -9,6 +9,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
 - majorversion: '3.9'
   releases:
+  - date: '2021-11-15'
+    info: https://www.python.org/downloads/release/python-399/
+    source: https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tar.xz
+    version: 3.9.9
+    windows32: https://www.python.org/ftp/python/3.9.9/python-3.9.9.exe
+    windows64: https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
   - date: '2021-11-05'
     info: https://www.python.org/downloads/release/python-398/
     source: https://www.python.org/ftp/python/3.9.8/Python-3.9.8.tar.xz
