@@ -1,6 +1,12 @@
 python_versions:
 - majorversion: '3.10'
   releases:
+  - date: '2021-12-06'
+    info: https://www.python.org/downloads/release/python-3101/
+    source: https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz
+    version: 3.10.1
+    windows32: https://www.python.org/ftp/python/3.10.1/python-3.10.1.exe
+    windows64: https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe
   - date: '2021-10-04'
     info: https://www.python.org/downloads/release/python-3100/
     source: https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
