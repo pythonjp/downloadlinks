@@ -79,7 +79,7 @@ def get_files(url):
         elif re.search(r"Gzipped source tarball", link.text):
             if not text:
                 text = "source"
-        elif re.search(r"(macOS 64-bit installer)|(Mac OS X 64-bit/32-bit installer)|(macOS 64-bit Intel installer)", link.text):
+        elif re.search(r"(macOS 64-bit installer)|(Mac OS X 64-bit/32-bit installer)|(macOS 64-bit Intel installer)|(macOS 64-bit universal2 installer)", link.text):
             text = "macos"
 
         if text:
