@@ -13,18 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.8
+      - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
-
-      - name: Cache download dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.cache
-          key: ${{ runner.os }}-pip2-${{ hashFiles('requirements.txt') }}-${{ hashFiles('freeze.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: 3.9
 
       - name: where?
         run: |
@@ -34,13 +26,6 @@ jobs:
         run: |
           python3 -m venv .venv
 
-      - name: Cache venv dependencies
-        uses: actions/cache@v1
-        with:
-          path: .venv
-          key: ${{ runner.os }}-venv2-${{ hashFiles('requirements.txt') }}-${{ hashFiles('freeze.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-venv2-
 
       - name: Install dependencies
         run: |
