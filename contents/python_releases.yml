@@ -38,6 +38,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
 - majorversion: '3.9'
   releases:
+  - date: '2022-05-17'
+    info: https://www.python.org/downloads/release/python-3913/
+    macos: https://www.python.org/ftp/python/3.9.13/python-3.9.13-macos11.pkg
+    source: https://www.python.org/ftp/python/3.9.13/Python-3.9.13.tar.xz
+    version: 3.9.13
+    windows32: https://www.python.org/ftp/python/3.9.13/python-3.9.13.exe
+    windows64: https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
   - date: '2022-03-23'
     info: https://www.python.org/downloads/release/python-3912/
     macos: https://www.python.org/ftp/python/3.9.12/python-3.9.12-macos11.pkg
