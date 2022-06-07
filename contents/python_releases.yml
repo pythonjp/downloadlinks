@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.10'
   releases:
+  - date: '2022-06-06'
+    info: https://www.python.org/downloads/release/python-3105/
+    macos: https://www.python.org/ftp/python/3.10.5/python-3.10.5-macos11.pkg
+    source: https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz
+    version: 3.10.5
+    windows32: https://www.python.org/ftp/python/3.10.5/python-3.10.5.exe
+    windows64: https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe
   - date: '2022-03-24'
     info: https://www.python.org/downloads/release/python-3104/
     macos: https://www.python.org/ftp/python/3.10.4/python-3.10.4-macos11.pkg
