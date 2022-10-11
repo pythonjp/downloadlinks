@@ -251,6 +251,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 - majorversion: '3.7'
   releases:
+  - date: '2022-10-11'
+    info: https://www.python.org/downloads/release/python-3715/
+    source: https://www.python.org/ftp/python/3.7.15/Python-3.7.15.tar.xz
+    version: 3.7.15
   - date: '2022-09-06'
     info: https://www.python.org/downloads/release/python-3714/
     source: https://www.python.org/ftp/python/3.7.14/Python-3.7.14.tar.xz
