@@ -6,6 +6,7 @@ python_versions:
     macos: https://www.python.org/ftp/python/3.11.0/python-3.11.0-macos11.pkg
     source: https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz
     version: 3.11.0
+    windows32: https://www.python.org/ftp/python/3.11.0/python-3.11.0.exe
     windows64: https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 - majorversion: '3.10'
   releases:
