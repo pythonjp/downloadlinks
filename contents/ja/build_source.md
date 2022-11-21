@@ -26,7 +26,7 @@ tar xJf Python-3.x.y.tar.xz
 以下のコマンドで、`/usr/local/` 以下にインストールします。
 
 ```sh
-cd Python3.x.y
+cd Python-3.x.y
 ./configure
 make
 sudo make install
@@ -35,7 +35,7 @@ sudo make install
 デフォルト以外のディレクトリにインストールする場合は、`configure` に `--prefix`オプションを指定します。
 
 ```sh
-cd Python3.x.y
+cd Python-3.x.y
 ./configure --prefix=/home/user/.local/python
 make
 make install
