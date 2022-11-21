@@ -26,7 +26,7 @@ tar xJf Python-3.x.y.tar.xz
 Following commands install Python under `/usr/local/` directory.
 
 ```sh
-cd Python3.x.y
+cd Python-3.x.y
 ./configure
 make
 sudo make install
