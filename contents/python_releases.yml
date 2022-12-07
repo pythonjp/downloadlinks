@@ -1,6 +1,13 @@
 python_versions:
 - majorversion: '3.11'
   releases:
+  - date: '2022-12-06'
+    info: https://www.python.org/downloads/release/python-3111/
+    macos: https://www.python.org/ftp/python/3.11.1/python-3.11.1-macos11.pkg
+    source: https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+    version: 3.11.1
+    windows32: https://www.python.org/ftp/python/3.11.1/python-3.11.1.exe
+    windows64: https://www.python.org/ftp/python/3.11.1/python-3.11.1-amd64.exe
   - date: '2022-10-24'
     info: https://www.python.org/downloads/release/python-3110/
     macos: https://www.python.org/ftp/python/3.11.0/python-3.11.0-macos11.pkg
@@ -10,6 +17,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 - majorversion: '3.10'
   releases:
+  - date: '2022-12-06'
+    info: https://www.python.org/downloads/release/python-3109/
+    macos: https://www.python.org/ftp/python/3.10.9/python-3.10.9-macos11.pkg
+    source: https://www.python.org/ftp/python/3.10.9/Python-3.10.9.tar.xz
+    version: 3.10.9
+    windows32: https://www.python.org/ftp/python/3.10.9/python-3.10.9.exe
+    windows64: https://www.python.org/ftp/python/3.10.9/python-3.10.9-amd64.exe
   - date: '2022-10-11'
     info: https://www.python.org/downloads/release/python-3108/
     macos: https://www.python.org/ftp/python/3.10.8/python-3.10.8-macos11.pkg
@@ -75,6 +89,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
 - majorversion: '3.9'
   releases:
+  - date: '2022-12-06'
+    info: https://www.python.org/downloads/release/python-3916/
+    source: https://www.python.org/ftp/python/3.9.16/Python-3.9.16.tar.xz
+    version: 3.9.16
   - date: '2022-10-11'
     info: https://www.python.org/downloads/release/python-3915/
     source: https://www.python.org/ftp/python/3.9.15/Python-3.9.15.tar.xz
@@ -176,6 +194,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
+  - date: '2022-12-06'
+    info: https://www.python.org/downloads/release/python-3816/
+    source: https://www.python.org/ftp/python/3.8.16/Python-3.8.16.tar.xz
+    version: 3.8.16
   - date: '2022-10-11'
     info: https://www.python.org/downloads/release/python-3815/
     source: https://www.python.org/ftp/python/3.8.15/Python-3.8.15.tar.xz
@@ -275,6 +297,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 - majorversion: '3.7'
   releases:
+  - date: '2022-12-06'
+    info: https://www.python.org/downloads/release/python-3716/
+    source: https://www.python.org/ftp/python/3.7.16/Python-3.7.16.tar.xz
+    version: 3.7.16
   - date: '2022-10-11'
     info: https://www.python.org/downloads/release/python-3715/
     source: https://www.python.org/ftp/python/3.7.15/Python-3.7.15.tar.xz
