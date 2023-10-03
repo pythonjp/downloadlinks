@@ -9,6 +9,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe
 - majorversion: '3.11'
   releases:
+  - date: '2023-10-02'
+    info: https://www.python.org/downloads/release/python-3116/
+    macos: https://www.python.org/ftp/python/3.11.6/python-3.11.6-macos11.pkg
+    source: https://www.python.org/ftp/python/3.11.6/Python-3.11.6.tar.xz
+    version: 3.11.6
+    windows64: https://www.python.org/ftp/python/3.11.6/python-3.11.6-amd64.exe
   - date: '2023-08-24'
     info: https://www.python.org/downloads/release/python-3115/
     macos: https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg
