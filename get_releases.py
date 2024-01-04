@@ -72,7 +72,7 @@ def get_files(url):
         text = ""
         if re.search(r"Windows installer \(64-bit\)|(Windows x86-64 executable installer)|(Windows x86-64 MSI installer)", link.text):
             text = "windows64"
-        elif re.search(r"(Windows installer \(32-bit\))|(Windows x86 executable installer)|(Windows x86 MSI installer)", link.text):
+        elif re.search(r"(Windows installer \(32 ?-bit\))|(Windows x86 executable installer)|(Windows x86 MSI installer)", link.text):
             text = "windows32"
         elif re.search(r"XZ compressed source tarball", link.text):
             text = "source"
