@@ -89,6 +89,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 - majorversion: '3.10'
   releases:
+  - date: '2024-03-19'
+    info: https://www.python.org/downloads/release/python-31014/
+    source: https://www.python.org/ftp/python/3.10.14/Python-3.10.14.tar.xz
+    version: 3.10.14
   - date: '2023-08-24'
     info: https://www.python.org/downloads/release/python-31013/
     source: https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
@@ -183,6 +187,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
 - majorversion: '3.9'
   releases:
+  - date: '2024-03-19'
+    info: https://www.python.org/downloads/release/python-3919/
+    source: https://www.python.org/ftp/python/3.9.19/Python-3.9.19.tar.xz
+    version: 3.9.19
   - date: '2023-08-24'
     info: https://www.python.org/downloads/release/python-3918/
     source: https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz
@@ -296,6 +304,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe
 - majorversion: '3.8'
   releases:
+  - date: '2024-03-19'
+    info: https://www.python.org/downloads/release/python-3819/
+    source: https://www.python.org/ftp/python/3.8.19/Python-3.8.19.tar.xz
+    version: 3.8.19
   - date: '2023-08-24'
     info: https://www.python.org/downloads/release/python-3818/
     source: https://www.python.org/ftp/python/3.8.18/Python-3.8.18.tar.xz
