@@ -6,3 +6,4 @@ miyadaiku_theme_bootstrap4
 miyadaiku_theme_fontawesome
 pyyaml
 packaging
+setuptools
