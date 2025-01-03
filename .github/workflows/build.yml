@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       actions: write
+    env:
+      GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN || github.token }}
     steps:
-      env:
-        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN || github.token }}
       run: |
         case "${GITHUB_WORKFLOW_REF:?}" in
           "${GITHUB_REPOSITORY:?}"/.github/workflows/*.y*ml@*) ;;
