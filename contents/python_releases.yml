@@ -96,6 +96,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe
 - majorversion: '3.11'
   releases:
+  - date: '2025-04-08'
+    info: https://www.python.org/downloads/release/python-31112/
+    source: https://www.python.org/ftp/python/3.11.12/Python-3.11.12.tar.xz
+    version: 3.11.12
   - date: '2024-12-03'
     info: https://www.python.org/downloads/release/python-31111/
     source: https://www.python.org/ftp/python/3.11.11/Python-3.11.11.tar.xz
@@ -176,6 +180,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 - majorversion: '3.10'
   releases:
+  - date: '2025-04-08'
+    info: https://www.python.org/downloads/release/python-31017/
+    source: https://www.python.org/ftp/python/3.10.17/Python-3.10.17.tar.xz
+    version: 3.10.17
   - date: '2024-12-03'
     info: https://www.python.org/downloads/release/python-31016/
     source: https://www.python.org/ftp/python/3.10.16/Python-3.10.16.tar.xz
