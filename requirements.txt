@@ -1,4 +1,4 @@
-miyadaiku>=1.12.dev5
+miyadaiku>=1.27.0
 requests
 bs4
 python-dateutil
