@@ -1,6 +1,20 @@
 python_versions:
 - majorversion: '3.13'
   releases:
+  - date: '2025-08-14'
+    info: https://www.python.org/downloads/release/python-3137/
+    macos: https://www.python.org/ftp/python/3.13.7/python-3.13.7-macos11.pkg
+    source: https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz
+    version: 3.13.7
+    windows32: https://www.python.org/ftp/python/3.13.7/python-3.13.7.exe
+    windows64: https://www.python.org/ftp/python/3.13.7/python-3.13.7-amd64.exe
+  - date: '2025-08-06'
+    info: https://www.python.org/downloads/release/python-3136/
+    macos: https://www.python.org/ftp/python/3.13.6/python-3.13.6-macos11.pkg
+    source: https://www.python.org/ftp/python/3.13.6/Python-3.13.6.tar.xz
+    version: 3.13.6
+    windows32: https://www.python.org/ftp/python/3.13.6/python-3.13.6.exe
+    windows64: https://www.python.org/ftp/python/3.13.6/python-3.13.6-amd64.exe
   - date: '2025-06-11'
     info: https://www.python.org/downloads/release/python-3135/
     macos: https://www.python.org/ftp/python/3.13.5/python-3.13.5-macos11.pkg
