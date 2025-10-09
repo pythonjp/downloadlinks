@@ -75,6 +75,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
 - majorversion: '3.12'
   releases:
+  - date: '2025-10-09'
+    info: https://www.python.org/downloads/release/python-31212/
+    source: https://www.python.org/ftp/python/3.12.12/Python-3.12.12.tar.xz
+    version: 3.12.12
   - date: '2025-06-03'
     info: https://www.python.org/downloads/release/python-31211/
     source: https://www.python.org/ftp/python/3.12.11/Python-3.12.11.tar.xz
