@@ -10,6 +10,13 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 - majorversion: '3.13'
   releases:
+  - date: '2025-10-14'
+    info: https://www.python.org/downloads/release/python-3139/
+    macos: https://www.python.org/ftp/python/3.13.9/python-3.13.9-macos11.pkg
+    source: https://www.python.org/ftp/python/3.13.9/Python-3.13.9.tar.xz
+    version: 3.13.9
+    windows32: https://www.python.org/ftp/python/3.13.9/python-3.13.9.exe
+    windows64: https://www.python.org/ftp/python/3.13.9/python-3.13.9-amd64.exe
   - date: '2025-10-07'
     info: https://www.python.org/downloads/release/python-3138/
     macos: https://www.python.org/ftp/python/3.13.8/python-3.13.8-macos11.pkg
