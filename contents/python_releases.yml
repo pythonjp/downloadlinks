@@ -1,6 +1,12 @@
 python_versions:
 - majorversion: '3.14'
   releases:
+  - date: '2025-12-02'
+    info: https://www.python.org/downloads/release/python-3141/
+    source: https://www.python.org/ftp/python/3.14.1/Python-3.14.1.tar.xz
+    version: 3.14.1
+    windows32: https://www.python.org/ftp/python/3.14.1/python-3.14.1.exe
+    windows64: https://www.python.org/ftp/python/3.14.1/python-3.14.1-amd64.exe
   - date: '2025-10-07'
     info: https://www.python.org/downloads/release/python-3140/
     macos: https://www.python.org/ftp/python/3.14.0/python-3.14.0-macos11.pkg
@@ -10,6 +16,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 - majorversion: '3.13'
   releases:
+  - date: '2025-12-02'
+    info: https://www.python.org/downloads/release/python-31310/
+    source: https://www.python.org/ftp/python/3.13.10/Python-3.13.10.tar.xz
+    version: 3.13.10
+    windows32: https://www.python.org/ftp/python/3.13.10/python-3.13.10.exe
+    windows64: https://www.python.org/ftp/python/3.13.10/python-3.13.10-amd64.exe
   - date: '2025-10-14'
     info: https://www.python.org/downloads/release/python-3139/
     macos: https://www.python.org/ftp/python/3.13.9/python-3.13.9-macos11.pkg
