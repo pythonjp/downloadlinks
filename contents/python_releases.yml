@@ -28,6 +28,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 - majorversion: '3.13'
   releases:
+  - date: '2026-02-03'
+    info: https://www.python.org/downloads/release/python-31312/
+    source: https://www.python.org/ftp/python/3.13.12/Python-3.13.12.tar.xz
+    version: 3.13.12
+    windows32: https://www.python.org/ftp/python/3.13.12/python-3.13.12.exe
+    windows64: https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
   - date: '2025-12-05'
     info: https://www.python.org/downloads/release/python-31311/
     source: https://www.python.org/ftp/python/3.13.11/Python-3.13.11.tar.xz
