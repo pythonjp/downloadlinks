@@ -1,6 +1,12 @@
 python_versions:
 - majorversion: '3.14'
   releases:
+  - date: '2026-08-05'
+    info: https://www.python.org/downloads/release/python-3147/
+    source: https://www.python.org/ftp/python/3.14.7/Python-3.14.7.tar.xz
+    version: 3.14.7
+    windows32: https://www.python.org/ftp/python/3.14.7/python-3.14.7.exe
+    windows64: https://www.python.org/ftp/python/3.14.7/python-3.14.7-amd64.exe
   - date: '2026-06-10'
     info: https://www.python.org/downloads/release/python-3146/
     source: https://www.python.org/ftp/python/3.14.6/Python-3.14.6.tar.xz
