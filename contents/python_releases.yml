@@ -160,6 +160,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
 - majorversion: '3.12'
   releases:
+  - date: '2026-08-12'
+    info: https://www.python.org/downloads/release/python-31214/
+    source: https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz
+    version: 3.12.14
   - date: '2026-03-03'
     info: https://www.python.org/downloads/release/python-31213/
     source: https://www.python.org/ftp/python/3.12.13/Python-3.12.13.tar.xz
@@ -251,6 +255,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe
 - majorversion: '3.11'
   releases:
+  - date: '2026-08-12'
+    info: https://www.python.org/downloads/release/python-31116/
+    source: https://www.python.org/ftp/python/3.11.16/Python-3.11.16.tar.xz
+    version: 3.11.16
   - date: '2026-03-03'
     info: https://www.python.org/downloads/release/python-31115/
     source: https://www.python.org/ftp/python/3.11.15/Python-3.11.15.tar.xz
@@ -347,6 +355,10 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 - majorversion: '3.10'
   releases:
+  - date: '2026-08-12'
+    info: https://www.python.org/downloads/release/python-31021/
+    source: https://www.python.org/ftp/python/3.10.21/Python-3.10.21.tar.xz
+    version: 3.10.21
   - date: '2026-03-03'
     info: https://www.python.org/downloads/release/python-31020/
     source: https://www.python.org/ftp/python/3.10.20/Python-3.10.20.tar.xz
