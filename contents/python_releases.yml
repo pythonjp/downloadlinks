@@ -1,4 +1,12 @@
 python_versions:
+- majorversion: '3.15'
+  releases:
+  - date: '2026-10-09'
+    info: https://www.python.org/downloads/release/python-3150/
+    source: https://www.python.org/ftp/python/3.15.0/Python-3.15.0.tar.xz
+    version: 3.15.0
+    windows32: https://www.python.org/ftp/python/3.15.0/python-3.15.0.exe
+    windows64: https://www.python.org/ftp/python/3.15.0/python-3.15.0-amd64.exe
 - majorversion: '3.14'
   releases:
   - date: '2026-09-30'
