@@ -1,6 +1,12 @@
 python_versions:
 - majorversion: '3.15'
   releases:
+  - date: '2026-10-21'
+    info: https://www.python.org/downloads/release/python-3151/
+    source: https://www.python.org/ftp/python/3.15.1/Python-3.15.1.tar.xz
+    version: 3.15.1
+    windows32: https://www.python.org/ftp/python/3.15.1/python-3.15.1.exe
+    windows64: https://www.python.org/ftp/python/3.15.1/python-3.15.1-amd64.exe
   - date: '2026-10-09'
     info: https://www.python.org/downloads/release/python-3150/
     source: https://www.python.org/ftp/python/3.15.0/Python-3.15.0.tar.xz
@@ -9,6 +15,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.15.0/python-3.15.0-amd64.exe
 - majorversion: '3.14'
   releases:
+  - date: '2026-10-21'
+    info: https://www.python.org/downloads/release/python-3149/
+    source: https://www.python.org/ftp/python/3.14.9/Python-3.14.9.tar.xz
+    version: 3.14.9
+    windows32: https://www.python.org/ftp/python/3.14.9/python-3.14.9.exe
+    windows64: https://www.python.org/ftp/python/3.14.9/python-3.14.9-amd64.exe
   - date: '2026-09-30'
     info: https://www.python.org/downloads/release/python-3148/
     source: https://www.python.org/ftp/python/3.14.8/Python-3.14.8.tar.xz
@@ -66,6 +78,12 @@ python_versions:
     windows64: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 - majorversion: '3.13'
   releases:
+  - date: '2026-10-21'
+    info: https://www.python.org/downloads/release/python-31317/
+    source: https://www.python.org/ftp/python/3.13.17/Python-3.13.17.tar.xz
+    version: 3.13.17
+    windows32: https://www.python.org/ftp/python/3.13.17/python-3.13.17.exe
+    windows64: https://www.python.org/ftp/python/3.13.17/python-3.13.17-amd64.exe
   - date: '2026-09-30'
     info: https://www.python.org/downloads/release/python-31316/
     source: https://www.python.org/ftp/python/3.13.16/Python-3.13.16.tar.xz
